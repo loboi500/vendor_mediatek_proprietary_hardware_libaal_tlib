@@ -1,0 +1,11 @@
+mtk_cc_prebuilt_library {
+    export_include_dirs: [
+        "include",
+    ],
+    mtk_product_line: "tablet",
+    mtk_src_path: "vendor/mediatek/proprietary/hardware/libaal",
+    mtk_type: "cc_library_headers",
+    name: "libaal_cust_headers",
+    vendor: true,
+}
+

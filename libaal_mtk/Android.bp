@@ -1,0 +1,71 @@
+mtk_cc_prebuilt_library {
+    arch: {
+        arm: {
+            cortex_a53: {
+                shared_libs: [
+                    "liblog",
+                    "libdl",
+                    "libcutils",
+                ],
+                srcs: [
+                    "arm_armv8-a_cortex-a53/libaal_mtk.so",
+                ],
+            },
+            cortex_a55: {
+                shared_libs: [
+                    "liblog",
+                    "libdl",
+                    "libcutils",
+                ],
+                srcs: [
+                    "arm_armv8-2a_cortex-a55/libaal_mtk.so",
+                ],
+            },
+            cortex_a7: {
+                shared_libs: [
+                    "liblog",
+                    "libdl",
+                    "libcutils",
+                ],
+                srcs: [
+                    "arm_armv7-a-neon_cortex-a7/libaal_mtk.so",
+                ],
+            },
+        },
+        arm64: {
+            cortex_a53: {
+                shared_libs: [
+                    "liblog",
+                    "libdl",
+                    "libcutils",
+                ],
+                srcs: [
+                    "arm64_armv8-a_cortex-a53/libaal_mtk.so",
+                ],
+            },
+            cortex_a55: {
+                shared_libs: [
+                    "liblog",
+                    "libdl",
+                    "libcutils",
+                ],
+                srcs: [
+                    "arm64_armv8-2a_cortex-a55/libaal_mtk.so",
+                ],
+            },
+        },
+    },
+    export_include_dirs: [
+        "include",
+    ],
+    mtk_product_line: "tablet",
+    mtk_src_path: "vendor/mediatek/proprietary/hardware/libaal",
+    mtk_type: "cc_prebuilt_library_shared",
+    name: "libaal_mtk",
+    owner: "mtk",
+    proprietary: true,
+    strip: {
+        none: true,
+    },
+}
+
