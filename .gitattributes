@@ -1,0 +1,2 @@
+libaal_mtk filter=lfs diff=lfs merge=lfs -text
+libaal_cust_headers filter=lfs diff=lfs merge=lfs -text
